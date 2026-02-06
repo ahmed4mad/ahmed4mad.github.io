@@ -3,50 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipse Logs</title>
+    <title>Berserk Themed Index</title>
     <style>
         body {
-            background-color: #1a1a1a;
-            color: #d4af37;
-            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f8e1c5; /* Light text color */
+            font-family: 'Garamond', serif;
+        }
+        header {
+            background: linear-gradient(90deg, #b8860b, #8b0000); /* Gold and blood red */
+            padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
-            color: #d4af37;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-        }
-        h2 {
-            color: #9b1c1c;
-            font-size: 2em;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-        }
-        .kicker {
-            font-style: italic;
-            font-size: 1.5em;
-            color: #d4af37;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-        }
-        .content {
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 20px;
-            padding: 20px;
-            border: 1px solid #d4af37;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
         }
-        emoji {
-            font-size: 2em;
+        .sidebar {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background: #b8860b;
+            text-align: center;
+            padding: 10px;
+        }
+        .eclipse {
+            color: #d32f2f; /* Blood red */
+            font-weight: bold;
+        }
+        .weapon {
+            background: url('medieval-weapon-image.jpg');
+            height: 200px;
+            background-size: cover;
+        }
+        .biography {
+            border: 1px solid #b8860b;
+            padding: 15px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Eclipse Logs</h1>
-    <div class="kicker">Brand Bearer</div>
-    <div class="content">
-        <p>⚔️ Guts: "I’ll take the risk. I’d rather have the chance to face my destiny than be stricken by fear." ⚔️</p>
-        <p>🛡️ Puck: "The world falls apart at the seams, yet we tread onward." 🛡️</p>
-        <p>Welcome to a Berserk-themed update filled with dark aesthetics and pixelated imagery!</p>
-        <p>Stay tuned for more updates!</p>
-    </div>
+    <header>
+        <h1>Berserk: The Dark Fantasy</h1>
+        <p>Struggle and Triumph</p>
+    </header>
+    <main>
+        <div class="sidebar">
+            <h2>Character Sheet</h2>
+            <p>Character: Guts</p>
+            <p>Age: 24</p>
+            <p>Role: Black Swordsman</p>
+            <p>Brand: Brand of Sacrifice</p>
+        </div>
+        <div class="weapon"></div>
+        <section class="biography">
+            <h2>Biography</h2>
+            <p>Guts was born from a hanged man and raised by mercenaries, facing a tumultuous life filled with battles.</p>
+        </section>
+        <section class="eclipse">
+            <h2>Eclipse Log</h2>
+            <p>Date: 2026-02-06</p>
+            <p>Details regarding the dark events that transpired during the Eclipse...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Berserk Fan Site</p>
+    </footer>
 </body>
 </html>
