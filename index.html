@@ -414,7 +414,7 @@
 
       <nav aria-label="Primary">
         <a class="tab" href="#/" data-link="home" aria-current="page">Home</a>
-        <a class="tab" href="#/about" data-link="about">About</a>
+        <a class="tab" href="about.html">About</a>
         <a class="tab" href="#/blog" data-link="blog">Blog</a>
       </nav>
     </header>
@@ -437,7 +437,7 @@
 
             <p class="muted">
               Quick links:
-              <a href="#/about">your story</a> •
+              <a href="about.html">your story</a> •
               <a href="#/blog">latest logs</a> •
               <a href="#contact">contact</a>
             </p>
@@ -611,7 +611,7 @@
     window.addEventListener("keydown", (e)=>{
       if(e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) return;
       if(e.key === "1") location.hash = "#/";
-      if(e.key === "2") location.hash = "#/about";
+      if(e.key === "2") location.href = "about.html";
       if(e.key === "3") location.hash = "#/blog";
     });
 
