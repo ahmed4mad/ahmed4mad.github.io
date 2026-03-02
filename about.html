@@ -76,28 +76,30 @@
     a{ color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 
     /* Bottom running strip (fixed) */
-    .strip{
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: var(--strip-h);
-      z-index: 10;
+   .strip{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--strip-h);
+  z-index: 10;
 
-      /* The GIF itself */
-      background-image: url("assets/bonfire.gif");
-      background-repeat: repeat-x; /* repeats horizontally */
-      background-position: 0 100%;
-      background-size: auto 100%;
-      image-rendering: pixelated;
+  /* Side “extension” color (pick whatever matches your gif edges) */
+  background-color: #25002f;   /* deep purple-ish */
 
-      /* Fade it into the page above */
-      mask-image: linear-gradient(to top, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
-      -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+  /* Show ONE gif centered at the bottom, no scrolling, no tiling */
+  background-image: url("/assets/bonfire.gif");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 100%;
+  image-rendering: pixelated;
 
-      /* optional: slightly dim so it doesn't overpower content */
-      filter: brightness(.95) contrast(1.05);
-    }
+  /* Optional fade into the page above */
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+  mask-image: linear-gradient(to top, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+
+  filter: brightness(.95) contrast(1.05);
+}
 
     /* OPTIONAL: “running” effect (scroll the strip sideways).
        This doesn’t change the GIF animation itself; it slides the strip. */
